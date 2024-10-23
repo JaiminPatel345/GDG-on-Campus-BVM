@@ -3,7 +3,7 @@ html {
 }
 
 #home {
-    height: 858px;
+    min-height: 100vh;
     background-image: url("../assets/bg_gdg_home.png");
     background-repeat: no-repeat;
     background-size: contain;
