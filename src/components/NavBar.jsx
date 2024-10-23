@@ -23,10 +23,22 @@ const NavBar = () => {
         <nav className="w-full bg-transparent/20 shadow-md sticky top-0 z-50">
             <div className="flex justify-between items-center px-6 py-3">
                 {/* Logo */}
-                <div className="logo">
+                <div className="logo flex">
                     <Link to={"/"}>
-                        <img src={logo} alt="GDG Logo" className="w-12" />
+                        <img
+                            src={logo}
+                            alt="GDG Logo"
+                            className=" w-16 h-16 bg-blue-800 rounded-md"
+                        />
                     </Link>
+                    <div className="ml-4">
+                        <h1 className="text-2xl text-white font-bold">
+                            Google Developer Groups on campus
+                        </h1>
+                        <p className="text-sm text-white/90 ">
+                            Birla Vishvakarma Mahavidyalaya
+                        </p>
+                    </div>
                 </div>
 
                 {/* Hamburger Icon */}

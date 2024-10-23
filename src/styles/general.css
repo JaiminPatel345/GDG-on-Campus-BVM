@@ -1,3 +1,11 @@
-html{
+html {
     background-color: #212121;
+}
+
+#home {
+    height: 858px;
+    background-image: url("../assets/bg_gdg_home.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
