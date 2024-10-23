@@ -1,0 +1,39 @@
+/* Custom colors for GDG logo theme */
+.nav-item {
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover colors for GDG theme */
+.hover\:text-gdg-blue:hover {
+  color: #4285F4; /* Google blue */
+}
+
+.hover\:text-gdg-red:hover {
+  color: #EA4335; /* Google red */
+}
+
+.hover\:text-gdg-yellow:hover {
+  color: #FBBC05; /* Google yellow */
+}
+
+.hover\:text-gdg-green:hover {
+  color: #34A853; /* Google green */
+}
+
+/* Dropdown specific styles */
+.dropdown-menu {
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #555; /* Darker gray for hover effect */
+  cursor: pointer;
+}
