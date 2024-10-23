@@ -1,4 +1,5 @@
 // import React from "react"
+import LetterPullup from "../components/LetterPullup"
 
 const About = () => {
     return (
@@ -7,9 +8,13 @@ const About = () => {
             className="min-h-screen bg-gray-900 text-white py-12 px-8"
         >
             <div className="text-center mb-12">
-                <h2 className="text-3xl font-semibold mb-4">
+                {/* <h2 className="text-3xl font-semibold mb-4">
                     Google Developer Groups on Campus
-                </h2>
+                </h2> */}
+                <LetterPullup
+                    className={"text-3xl font-semibold mb-4"}
+                    words={"Google Developer Groups on Campus"}
+                />
                 <p className="text-lg">
                     Explore the world of technology with fellow students and
                     developers on campus. Learn, connect, and grow your skills
@@ -26,6 +31,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
                     <h3 className="text-xl font-semibold mb-4">Connect</h3>
+
                     <p className="text-gray-300">
                         Meet local developers and technologists. All are
                         welcome, including those with unique backgrounds and

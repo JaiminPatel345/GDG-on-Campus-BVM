@@ -25,11 +25,7 @@ const NavBar = () => {
                 {/* Logo */}
                 <div className="logo flex">
                     <Link to={"/"}>
-                        <img
-                            src={logo}
-                            alt="GDG Logo"
-                            className=" w-16 h-16 bg-blue-800 rounded-md"
-                        />
+                        <img src={logo} alt="GDG Logo" className=" w-16 h-16" />
                     </Link>
                     <div className="ml-4">
                         <h1 className="text-2xl text-white font-bold">
