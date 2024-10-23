@@ -1,39 +1,85 @@
 /* Custom colors for GDG logo theme */
 .nav-item {
-  font-size: 1rem;
-  cursor: pointer;
-  transition: color 0.3s ease-in-out;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
 }
 
 /* Hover colors for GDG theme */
 .hover\:text-gdg-blue:hover {
-  color: #4285F4; /* Google blue */
+    color: #4285f4; /* Google blue */
 }
 
 .hover\:text-gdg-red:hover {
-  color: #EA4335; /* Google red */
+    color: #ea4335; /* Google red */
 }
 
 .hover\:text-gdg-yellow:hover {
-  color: #FBBC05; /* Google yellow */
+    color: #fbbc05; /* Google yellow */
 }
 
 .hover\:text-gdg-green:hover {
-  color: #34A853; /* Google green */
+    color: #34a853; /* Google green */
 }
 
 /* Dropdown specific styles */
 .dropdown-menu {
-  min-width: 150px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
+
+    /* top: 90%; */
+    left: 40%;
+    background-color: #1f2937;
+
+    min-width: 150px;
+    z-index: 50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem;
 }
 
 .dropdown-item {
-  padding: 0.5rem 1rem;
-  transition: background-color 0.3s ease;
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: red 0.3s ease;
 }
 
 .dropdown-item:hover {
-  background-color: #555; /* Darker gray for hover effect */
-  cursor: pointer;
+    background-color: #4b4b4b; /* Darker gray for hover effect */
+    cursor: pointer;
+}
+
+/* Add styles for the mobile menu */
+@media (max-width: 800px) {
+    nav ul {
+        display: block;
+        width: 100%;
+        background-color: #1f2937; /* Dark background for the mobile menu */
+        transition: top 0.3s ease;
+    }
+
+    nav ul li {
+        margin: 12px 0;
+        text-align: center;
+    }
+
+    nav ul.top-16 {
+        top: 64px; /* When menu is open */
+    }
+
+    .dropdown-menu {
+        background-color: #4c5664;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .dropdown-menu ul {
+        background-color: #313944;
+    }
+}
+
+/* Make sure links are hidden in mobile view by default */
+ul {
+    z-index: -1;
+}
+
+.md\\:hidden {
+    display: none;
 }
