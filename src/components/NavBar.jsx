@@ -15,7 +15,7 @@ import logo from "../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <div className="flex  bg-gray-900">
+    <div className="flex  bg-gray-900 ">
       <Sidebar />
       <ExampleContent />
     </div>
@@ -37,7 +37,6 @@ const Sidebar = () => {
     >
       {/* Logo and title section */}
       <TitleSection open={open} />
-
       {/* Menu options */}
       <div className="space-y-2">
         <Option
@@ -70,7 +69,9 @@ const Sidebar = () => {
             selected={selected}
             setSelected={setSelected}
             open={open}
-            onClick={() => setFlashbackOpen(!flashbackOpen)} // Toggle sub-menu
+            onClick={() => {
+              setOpen(true);
+              setFlashbackOpen(!flashbackOpen)}} 
           />
           {flashbackOpen && open && (
             <motion.div
