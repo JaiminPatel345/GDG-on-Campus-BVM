@@ -15,7 +15,7 @@ import logo from "../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <div className="flex fixed bg-gray-900">
+    <div className="flex  bg-gray-900">
       <Sidebar />
       <ExampleContent />
     </div>
@@ -194,7 +194,7 @@ const TitleSection = ({ open }) => {
             </motion.div>
           )}
         </div>
-        {open && <FiChevronDown className="mr-2 text-gray-400" />}
+        {/* {open && <FiChevronDown className="mr-2 text-gray-400" />} */}
       </div>
     </div>
   );
