@@ -21,7 +21,8 @@ const Team = () => {
                     "https://www.linkedin.com/in/dr-vatsal-shah-03aa8218b",
                 gmailUrl: "https://gdsc.community.dev/u/m6h7ku/",
                 githubUrl: "",
-                imageUrl: "",
+                imageUrl:
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729826211/vatsal_buxcuc.jpg",
             },
 
             {
@@ -30,7 +31,8 @@ const Team = () => {
                 linkedinUrl: "#",
                 gmailUrl: "#",
                 githubUrl: "",
-                imageUrl: "",
+                imageUrl:
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729826211/bijal_qyretc.jpg",
             },
 
             {
@@ -40,7 +42,7 @@ const Team = () => {
                 gmailUrl: "nallaabhi2003@gmail.com",
                 githubUrl: "https://github.com/abhinalla003",
                 imageUrl:
-                    "https://drive.google.com/open?id=1DgnAHrUvOP_XpozU_sVxWeeOVkrO2DTj",
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729824268/wd57kngcujagwldqnmtj.jpg",
             },
         ],
 
@@ -53,7 +55,7 @@ const Team = () => {
                 gmailUrl: "theprajapatiom@gmail.com",
                 githubUrl: "",
                 imageUrl:
-                    "https://drive.google.com/open?id=1lHTA5gBJQ6BIx0V8Ko7HcLKpl_4vGgDc",
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729825808/h5vsj7t6ubczeq9sbmsx.jpg",
             },
             {
                 name: "Yatri Chhatrala",
@@ -62,7 +64,7 @@ const Team = () => {
                 gmailUrl: "yatrichhatrala@gmail.com",
                 githubUrl: "https://github.com/yatri28",
                 imageUrl:
-                    "https://drive.google.com/open?id=11Wrq5Y1kHoQ-huy16zi0rQHRag_mmlcq",
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729824272/jxfbijj58q9jbbknk8ay.jpg",
             },
         ],
 
@@ -74,7 +76,7 @@ const Team = () => {
                 gmailUrl: "adityapatel14062006@gmail.com",
                 githubUrl: "",
                 imageUrl:
-                    "https://drive.google.com/open?id=1AlOMyDGECOq8jewmUYMQGuvC4v3yZCP7",
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729824265/cvkluyrixrstlbpmcpgy.jpg",
             },
             {
                 name: "Pratibha Indravath",
@@ -83,7 +85,7 @@ const Team = () => {
                 gmailUrl: "pratibhaindravath06@gmail.com",
                 githubUrl: "https://github.com/Pratibha706",
                 imageUrl:
-                    "https://drive.google.com/open?id=1qC-e7zlLMBS3LZIkEX89qx5rAfB4EpgU",
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729824269/wbqx8zhrahvqp0freoxm.jpg",
             },
             {
                 name: "Vihaa Shah",
@@ -92,7 +94,7 @@ const Team = () => {
                 gmailUrl: "vihaa.shah23@gmail.com",
                 githubUrl: "https://github.com/vihaa23",
                 imageUrl:
-                    "https://drive.google.com/open?id=1yisK0aNFxA0rqLO06le0ai0jTCJaY33n",
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729824274/eidrhpnxivbomdlyfdkq.jpg",
             },
         ],
 
@@ -106,7 +108,7 @@ const Team = () => {
                 gmailUrl: "saniyamasih1837@gmail.com",
                 githubUrl: "",
                 imageUrl:
-                    "https://drive.google.com/open?id=1Jv7xO44YvEI6XXltXS3p_ASKrKPmnBy8",
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729824268/shvpew2oesyk1rdkwjgd.jpg",
             },
             {
                 name: "Tanisha Patel",
@@ -115,19 +117,19 @@ const Team = () => {
                 gmailUrl: "p.tanisha257@gmail.com",
                 githubUrl: "",
                 imageUrl:
-                    "https://drive.google.com/open?id=1zQihr4sPqDKlEjq0BjSP7rjoE1YxKBZF",
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729824269/cwnliheudipjfuivxyur.jpg",
             },
         ],
 
         [
             {
-                name: "Vishal Sharat Jena",
+                name: "Vishal  Jena",
                 role: "Associate Lead",
                 linkedinUrl: "",
                 gmailUrl: "vishal1713vsl@gmail.com",
                 githubUrl: "WeR4Code",
                 imageUrl:
-                    "https://drive.google.com/open?id=1O-C79Qt1LRfXxISfn3yK2Cy-4_KeOy76",
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729824270/amnle1ewk9rlo9i8e1fq.jpg",
             },
             {
                 name: "Jaimin Detroja",
@@ -136,17 +138,17 @@ const Team = () => {
                 gmailUrl: "officialjaimin345@gmail.com",
                 githubUrl: "https://github.com/JaiminPatel345",
                 imageUrl:
-                    "https://drive.google.com/open?id=1dbTGLxsZqQ7QlRdCvcl2mnDjUhfnZJeB",
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729824266/oj2tyvgej9bicbgtml8f.jpg",
             },
 
             {
-                name: "Tanish Himanshu Kamdar",
+                name: "Tanish  Kamdar",
                 role: "ML Associate",
                 linkedinUrl: "https://www.linkedin.com/in/tanishkamdar/",
                 gmailUrl: "tanishkamdar07@gmail.com",
                 githubUrl: "https://github.com/Techoder",
                 imageUrl:
-                    "https://drive.google.com/open?id=183OQjWQWuRr932wevcWGSXZIVq6a2v72",
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729824271/ghr5dwd5rq8eo4nrvefi.png",
             },
 
             {
@@ -157,7 +159,7 @@ const Team = () => {
                 gmailUrl: "narendramali7874@gmail.com",
                 githubUrl: "https://github.com/Naren7874",
                 imageUrl:
-                    "https://drive.google.com/open?id=1Zt51gfWQx62dj8F_1YmIomE5u1mqX6tH",
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729825535/xvksei35uqzgmiqjznad.jpg",
             },
 
             {
@@ -168,7 +170,7 @@ const Team = () => {
                 gmailUrl: "prajapatirudra2594@gmail.com",
                 githubUrl: "https://github.com/Rudra250",
                 imageUrl:
-                    "https://drive.google.com/open?id=1-wsk52aDbIU-ygbF_Ok-QK2226MVLfqA",
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729824273/yynmbm6dzbaxl8p1zqdb.jpg",
             },
 
             {
@@ -179,7 +181,7 @@ const Team = () => {
                 gmailUrl: "krishpatel.dcom46@gmail.com",
                 githubUrl: "https://github.com/krishpatel46",
                 imageUrl:
-                    "https://drive.google.com/open?id=1qFqc9UN6O4HX0X5NWatUXojxMv3lxgiY",
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729824270/hoindhm5wsj7egp3vfwc.jpg",
             },
         ],
     ]
