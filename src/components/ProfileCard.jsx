@@ -85,7 +85,7 @@ const ProfileCard = ({
                     </a>
 
                     <a
-                        href={`mailto:${githubUrl}`}
+                        href={`${githubUrl}`}
                         className="text-white hover:text-white/40  pt-7"
                     >
                         <FaGithub size="2em" />

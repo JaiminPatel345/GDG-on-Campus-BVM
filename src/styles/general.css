@@ -4,7 +4,7 @@ html {
 
 #home {
     min-height: 100vh;
-    background-image: url("../assets/bg_gdg_home.png");
+    background-image: url("/bg_gdg_home.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

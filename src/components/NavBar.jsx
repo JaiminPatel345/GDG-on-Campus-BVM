@@ -11,7 +11,6 @@ import {
 import { MdOutlineEmojiEvents } from "react-icons/md"
 
 import { motion } from "framer-motion"
-import logo from "../assets/logo.png"
 
 const Navbar = () => {
     return (
@@ -49,6 +48,13 @@ const Sidebar = () => {
                 <Option
                     Icon={FiBookOpen}
                     title="About"
+                    selected={selected}
+                    setSelected={setSelected}
+                    open={open}
+                />
+                <Option
+                    Icon={FiUsers}
+                    title="Team"
                     selected={selected}
                     setSelected={setSelected}
                     open={open}
@@ -113,13 +119,6 @@ const Sidebar = () => {
                     )}
                 </motion.div>
 
-                <Option
-                    Icon={FiUsers}
-                    title="Team"
-                    selected={selected}
-                    setSelected={setSelected}
-                    open={open}
-                />
                 <Option
                     Icon={FiPhone}
                     title="Contact"
@@ -223,7 +222,7 @@ const Logo = () => {
             layout
             className="grid size-10 shrink-0 place-content-center rounded-md bg-gray-700"
         >
-            <img src={logo} alt="Logo" className="w-8 h-8" />
+            <img src="/logo.png" alt="Logo" className="w-8 h-8" />
         </motion.div>
     )
 }
