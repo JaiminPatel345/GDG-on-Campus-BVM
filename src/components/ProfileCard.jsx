@@ -1,7 +1,18 @@
-import React, { useState } from "react"
+/* eslint-disable react/prop-types */
+import { useState } from "react"
 import { motion } from "framer-motion"
+import { FaLinkedin } from "react-icons/fa"
+import { SiGmail } from "react-icons/si"
+import { FaGithub } from "react-icons/fa6"
 
-const ProfileCard = ({ imageUrl, name, role, linkedinUrl, gmailUrl }) => {
+const ProfileCard = ({
+    imageUrl,
+    name,
+    role,
+    linkedinUrl,
+    gmailUrl,
+    githubUrl,
+}) => {
     // State to track the mouse position and card rotation + shadow direction
     const [cardEffect, setCardEffect] = useState({
         rotateX: 0,
@@ -68,31 +79,24 @@ const ProfileCard = ({ imageUrl, name, role, linkedinUrl, gmailUrl }) => {
                         href={linkedinUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-500 hover:text-blue-400"
+                        className="text-blue-500 hover:text-blue-400 pt-7"
                     >
-                        <svg
-                            className="w-6 h-6"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path d="M19 0H5C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5V5c0-2.761-2.239-5-5-5zM7.236 19H4V9.328h3.236V19zM5.635 8.143c-.964 0-1.742-.776-1.742-1.736 0-.962.778-1.736 1.742-1.736.964 0 1.741.775 1.741 1.736 0 .96-.778 1.736-1.741 1.736zM20 19h-3.234v-5.608c0-1.344-.478-2.26-1.678-2.26-.916 0-1.462.61-1.701 1.201-.087.21-.108.506-.108.8V19H10.08V9.328h3.087v1.307h.041c.416-.673 1.155-1.633 2.81-1.633 1.996 0 3.491 1.304 3.491 4.103V19z"></path>
-                        </svg>
+                        <FaLinkedin size="2em" />
+                    </a>
+
+                    <a
+                        href={`mailto:${githubUrl}`}
+                        className="text-white hover:text-white/40  pt-7"
+                    >
+                        <FaGithub size="2em" />
                     </a>
 
                     {/* Gmail Link */}
                     <a
                         href={`mailto:${gmailUrl}`}
-                        className="text-red-500 hover:text-red-400"
+                        className="text-red-500 hover:text-red-400 pt-7"
                     >
-                        <svg
-                            className="w-6 h-6"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path d="M12 12.713L0 5.15V19a5 5 0 005 5h14a5 5 0 005-5V5.15l-12 7.563zM12 0L0 7.499V4.6a5 5 0 015-5h14a5 5 0 015 5v2.899L12 0z"></path>
-                        </svg>
+                        <SiGmail size="2em" />
                     </a>
                 </div>
             </div>
