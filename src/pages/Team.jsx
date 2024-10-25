@@ -8,10 +8,12 @@ const Team = () => {
             {
                 name: "MNS Arjun",
                 role: "Lead",
-                linkedinUrl: "",
+                linkedinUrl:
+                    "https://www.linkedin.com/in/m-naga-sai-arjun-a97089328/",
                 gmailUrl: "",
                 githubUrl: "",
-                imageUrl: "",
+                imageUrl:
+                    "https://res.cloudinary.com/driy33xtm/image/upload/v1729845482/arjun_qatc7b.jpg",
             },
 
             {
