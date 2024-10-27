@@ -1,6 +1,6 @@
 import React from "react"
-import { FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa"
-import { BsDiscord } from "react-icons/bs"
+import { FaLinkedinIn, FaInstagram } from "react-icons/fa"
+import { BsDiscord, BsTwitterX } from "react-icons/bs"
 
 const Contact = () => {
     return (
@@ -47,9 +47,15 @@ const Contact = () => {
 
                         {/* Twitter */}
                         <div className="button group flex items-center space-x-4">
-                            <div className="icon bg-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-all duration-500 ease-out group-hover:bg-[#1da1f2]">
-                                <FaTwitter className="text-2xl text-black group-hover:text-white" />
+                            <div className="icon bg-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-all duration-500 ease-out group-hover:bg-[#000000]">
+                                <BsTwitterX className="text-2xl text-black group-hover:text-white" />
                             </div>
+                            <span className="text-lg  font-bold text-[#929292] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                X
+                            </span>
+                            <span className="text-lg font-medium text-[#ffffff] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                /
+                            </span>
                             <span className="text-lg font-medium text-[#1da1f2] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                                 Twitter
                             </span>

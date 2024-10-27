@@ -7,12 +7,25 @@ const App = () => {
             <div className=" flex  h-screen w-screen object-cover overflow-y-auto overflow-x-hidden">
                 <NavBar />
                 <div className="h-full w-full object-cover overflow-y-auto overflow-x-hidden">
-                    <Home id="home"></Home>
-                    <About id="about"></About>
-                    <Team id="team"></Team>
-                    <Events id="events"></Events>
-                    <Flashback></Flashback>
-                    <Contact id="contact"></Contact>
+                    <div id="home">
+                        <Home />
+                    </div>
+                    <div id="about">
+                        <About />
+                    </div>
+                    <div id="events">
+                        <Events />
+                    </div>
+                    <div id="team">
+                        <Team />
+                    </div>
+                    <div id="flashback">
+                        <Flashback />
+                    </div>
+
+                    <div id="contact">
+                        <Contact />
+                    </div>
                 </div>
             </div>
         </>
