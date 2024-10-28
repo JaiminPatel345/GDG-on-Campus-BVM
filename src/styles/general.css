@@ -3,10 +3,6 @@ html {
     scroll-behavior: smooth;
 }
 
-#home {
+#HomePage {
     min-height: 100vh;
-    background-image: url("/bg_gdg_home.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
