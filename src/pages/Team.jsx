@@ -189,30 +189,41 @@ const Team = () => {
     ]
 
     return (
-        <div className="flex flex-wrap gap-10 p-4">
-            {teamMembers.map((row, rowIndex) => (
-                <div
-                    key={rowIndex}
-                    className="flex flex-wrap justify-around gap-6 w-full"
-                >
-                    {row.map((member, memberIndex) => (
-                        <ProfileCard
-                            key={memberIndex}
-                            imageUrl={member.imageUrl}
-                            name={member.name}
-                            role={member.role}
-                            linkedinUrl={
-                                member.linkedinUrl || "https://linkedin.com/"
-                            }
-                            gmailUrl={member.gmailUrl}
-                            githubUrl={
-                                member.githubUrl || "https://github.com/"
-                            }
-                        />
+        <>
+            <div className="flex flex-col gap-10 mt-20">
+                <div>
+                    <h1 className="text-4xl font-bold text-center text-blue-300">
+                        OUR TEAM
+                    </h1>
+                </div>
+                <div className="flex flex-wrap gap-20 p-4">
+                    {teamMembers.map((row, rowIndex) => (
+                        <div
+                            key={rowIndex}
+                            className="flex flex-wrap justify-around gap-6 w-full"
+                        >
+                            {row.map((member, memberIndex) => (
+                                <ProfileCard
+                                    key={memberIndex}
+                                    imageUrl={member.imageUrl}
+                                    name={member.name}
+                                    role={member.role}
+                                    linkedinUrl={
+                                        member.linkedinUrl ||
+                                        "https://linkedin.com/"
+                                    }
+                                    gmailUrl={member.gmailUrl}
+                                    githubUrl={
+                                        member.githubUrl ||
+                                        "https://github.com/"
+                                    }
+                                />
+                            ))}
+                        </div>
                     ))}
                 </div>
-            ))}
-        </div>
+            </div>
+        </>
     )
 }
 

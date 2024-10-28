@@ -13,11 +13,11 @@ const App = () => {
                     <div id="about">
                         <About />
                     </div>
-                    <div id="events">
-                        <Events />
-                    </div>
                     <div id="team">
                         <Team />
+                    </div>
+                    <div id="events">
+                        <Events />
                     </div>
                     <div id="flashback">
                         <Flashback />
