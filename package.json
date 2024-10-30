@@ -16,6 +16,7 @@
     "@react-icons/all-files": "^4.1.0",
     "@react-three/drei": "^9.115.0",
     "@react-three/fiber": "^8.17.10",
+    "@types/three": "^0.169.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.10",
     "motion": "^10.18.0",
