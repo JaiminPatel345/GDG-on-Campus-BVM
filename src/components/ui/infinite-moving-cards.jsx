@@ -78,7 +78,7 @@ export const InfiniteMovingCards = ({
             >
                 {items.map((item, idx) => (
                     <CardSpotlight
-                        className="z-50"
+                        className="z-50 h-full"
                         key={idx} // Use idx as key for simplicity; consider using a unique ID if available
                     >
                         <ThreeDCardDemo
@@ -86,7 +86,7 @@ export const InfiniteMovingCards = ({
                             description={item.description}
                             imgUrl={item.imgUrl}
                             learnUrl={item.learnUrl}
-                            registerUrl={item.registerUrl}
+                            // registerUrl={item.registerUrl}
                         />
                     </CardSpotlight>
                 ))}
