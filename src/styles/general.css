@@ -1,11 +1,8 @@
 html {
     background-color: #212121;
+    scroll-behavior: smooth;
 }
 
-#home {
+#HomePage {
     min-height: 100vh;
-    background-image: url("../assets/bg_gdg_home.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }

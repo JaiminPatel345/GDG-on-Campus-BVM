@@ -9,15 +9,12 @@ import {
     FiPhone,
 } from "react-icons/fi"
 import { MdOutlineEmojiEvents } from "react-icons/md"
-
 import { motion } from "framer-motion"
-import logo from "../assets/logo.png"
 
 const Navbar = () => {
     return (
-        <div className="flex  bg-gray-900 ">
+        <div className="flex bg-gray-900">
             <Sidebar />
-            <ExampleContent />
         </div>
     )
 }
@@ -45,6 +42,7 @@ const Sidebar = () => {
                     selected={selected}
                     setSelected={setSelected}
                     open={open}
+                    scrollTo="home" // Added scrollTo prop
                 />
                 <Option
                     Icon={FiBookOpen}
@@ -52,6 +50,15 @@ const Sidebar = () => {
                     selected={selected}
                     setSelected={setSelected}
                     open={open}
+                    scrollTo="about" // Added scrollTo prop
+                />
+                <Option
+                    Icon={FiUsers}
+                    title="Team"
+                    selected={selected}
+                    setSelected={setSelected}
+                    open={open}
+                    scrollTo="team" // Added scrollTo prop
                 />
                 <Option
                     Icon={MdOutlineEmojiEvents}
@@ -59,8 +66,8 @@ const Sidebar = () => {
                     selected={selected}
                     setSelected={setSelected}
                     open={open}
+                    scrollTo="events" // Added scrollTo prop
                 />
-
                 {/* Flashback with sub-options */}
                 <motion.div layout>
                     <Option
@@ -112,20 +119,13 @@ const Sidebar = () => {
                         </motion.div>
                     )}
                 </motion.div>
-
-                <Option
-                    Icon={FiUsers}
-                    title="Team"
-                    selected={selected}
-                    setSelected={setSelected}
-                    open={open}
-                />
                 <Option
                     Icon={FiPhone}
                     title="Contact"
                     selected={selected}
                     setSelected={setSelected}
                     open={open}
+                    scrollTo="contact" // Added scrollTo prop
                 />
             </div>
 
@@ -144,14 +144,25 @@ const Option = ({
     open,
     onClick,
     isSubOption,
+    scrollTo, // Added scrollTo prop
 }) => {
+    const handleClick = () => {
+        if (onClick) onClick() // Handle toggle for Flashback
+        else {
+            setSelected(title) // Select menu option
+            if (scrollTo) {
+                const section = document.getElementById(scrollTo)
+                if (section) {
+                    section.scrollIntoView({ behavior: "smooth" }) // Scroll to section
+                }
+            }
+        }
+    }
+
     return (
         <motion.button
             layout
-            onClick={() => {
-                if (onClick) onClick() // Handle toggle for Flashback
-                else setSelected(title) // Select menu option
-            }}
+            onClick={handleClick}
             className={`relative flex h-10 w-full items-center rounded-md transition-colors ${
                 selected === title
                     ? "bg-blue-900 text-blue-300"
@@ -210,7 +221,6 @@ const TitleSection = ({ open }) => {
                         </motion.div>
                     )}
                 </div>
-                {/* {open && <FiChevronDown className="mr-2 text-gray-400" />} */}
             </div>
         </div>
     )
@@ -223,7 +233,7 @@ const Logo = () => {
             layout
             className="grid size-10 shrink-0 place-content-center rounded-md bg-gray-700"
         >
-            <img src={logo} alt="Logo" className="w-8 h-8" />
+            <img src="/logo.png" alt="Logo" className="w-8 h-8" />
         </motion.div>
     )
 }
@@ -262,10 +272,5 @@ const ToggleClose = ({ open, setOpen }) => {
         </motion.button>
     )
 }
-
-// Content example
-const ExampleContent = () => (
-    <div className="h-[200vh] w-full bg-gray-900"></div>
-)
 
 export default Navbar
