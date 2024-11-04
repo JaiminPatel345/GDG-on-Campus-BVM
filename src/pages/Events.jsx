@@ -23,7 +23,7 @@ Total attendees: 95.`,
             description:
                 "In Azure Cloud Computing event, attendees received an introduction to fundamental cloud services. A Microsoft expert led the session, offering practical insights on real-world applications and best practices for cloud adoption.",
             imgUrl: "/azure.jpg",
-            learnUrl: "/events/azure",
+            learnUrl: "/events/azure1",
             registerUrl: "/",
         },
     ]
